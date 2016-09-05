@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3缩放</title>
+	<style>
+		#div1,#div2{
+			width: 200px;
+			height: 200px;
+			background: #f40;
+			text-align: center;
+			line-height: 200px;
+			color: #fff;
+		}
+		#div1{
+			margin: 20px auto;
+		}
+		#div2{
+			margin: 150px auto;
+		}
+		#div1:hover{
+			transform: scale(1.5);
+		}
+		#div2:hover{
+			transform: scale(0.8);
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">我将放大</div>
+	<div id="div2">我将缩小</div>
+</body>
+</html>
