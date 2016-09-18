@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3复杂动画</title>
+	<style>
+		#div1{
+			width: 200px;
+			height: 200px;
+			background: red;
+			text-align: center;
+			line-height: 200px;
+			color: #fff;
+		}
+		#div1:hover{
+			animation: wobble 5s ease .1s;
+		}
+		@keyframes wobble{
+			0%{
+				margin-left: 100px;
+				background: green;
+			}
+			40%{
+				margin-left: 150px;
+				background: orange;
+			}
+			60%{
+				margin-left: 75px;
+				background: blue;
+			}
+			100%{
+				margin-left: 100px;
+				background: #f69;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">把鼠标移到我身上</div>
+</body>
+</html>
